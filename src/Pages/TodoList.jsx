@@ -17,10 +17,17 @@ const TodoList = () => {
     { text: "Belajar React Typescript!" },
     { text: "Belajar React Router!" }
   ]);
+
+  const addTodo = (value) => {
+    const addedTodo = [...todos, { text: value }];
+
+    setTodos(addedTodo);
+  };
+
   return (
     <Paper>
       <Header />
-      <TodoForm />
+      <TodoForm addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
   );

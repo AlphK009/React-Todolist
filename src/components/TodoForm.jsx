@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import PropsTypes from "prop-types";
-import Todo from "./Todo";
 
 const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
@@ -13,7 +12,6 @@ const TodoForm = ({ addTodo }) => {
       return;
     }
     addTodo(value);
-    alert(value);
     setValue("");
   };
   return (
