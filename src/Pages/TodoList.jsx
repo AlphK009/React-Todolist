@@ -5,6 +5,7 @@ import TodoForm from "../components/TodoForm";
 import Todos from "../components/Todos";
 
 const TodoList = () => {
+  const [showAdd, setShowAdd] = useState(false);
   const [todos, setTodos] = useState([
     { text: "Belajar React!" },
     { text: "Belajar State React!" },
@@ -20,14 +21,15 @@ const TodoList = () => {
 
   const addTodo = (value) => {
     const addedTodo = [...todos, { text: value }];
-
     setTodos(addedTodo);
   };
 
+  const showAddToggle = () => setShowAdd(!showAdd);
+
   return (
     <Paper>
-      <Header />
-      <TodoForm addTodo={addTodo} />
+      <Header showAddToggle={showAddToggle} showAdd={showAdd} />
+      <TodoForm addTodo={addTodo} showAdd={showAdd} />
       <Todos todos={todos} />
     </Paper>
   );
