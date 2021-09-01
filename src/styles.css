@@ -5,18 +5,6 @@
   --main-red-color: #e06262;
   --main-black-color: #484848;
 }
-.main-red-color {
-  color: var(--main-red-color);
-}
-.main-black-color {
-  color: var(--main-black-color);
-}
-.align-left {
-  text-align: left;
-}
-.align-right {
-  text-align: right;
-}
 html {
   font-size: 10px;
 }
@@ -63,25 +51,6 @@ html {
   text-transform: lowercase;
   color: var(--main-black-color);
 }
-.header-btn {
-  font-size: 1.8rem;
-  font-family: "Bungee", sans-serif;
-
-  width: 24%;
-  padding: 16px;
-  background: unset;
-  border: unset;
-  outline: unset;
-
-  cursor: pointer;
-}
-.header-btn.main-red-color:active {
-  text-shadow: 1px 3px 2px var(--main-red-color);
-}
-.header-btn.main-black-color:active {
-  text-shadow: 1px 3px 2px var(--main-black-color);
-}
-
 .add {
   padding: 16px;
 }
