@@ -24,7 +24,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.container {
+/* .container {
   width: 600px;
   height: 800px;
   background-color: #f2eecb;
@@ -37,8 +37,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.header {
+} */
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -50,8 +50,8 @@ html {
   font-family: "Homemade Apple", sans-serif;
   text-transform: lowercase;
   color: var(--main-black-color);
-}
-.add {
+} */
+/* .add {
   padding: 16px;
 }
 .add-form {
@@ -71,8 +71,8 @@ html {
   font-family: "Homemade Apple", sans-serif;
   font-size: 16px;
   text-transform: lowercase;
-}
-.add-btn {
+} */
+/* .add-btn {
   font-size: 1.8rem;
   font-family: "Bungee", sans-serif;
 
@@ -86,15 +86,15 @@ html {
 }
 .add-btn.main-black-color:active {
   text-shadow: 1px 3px 2px var(--main-black-color);
-}
+} */
 
-.todos {
+/* .todos {
   display: flex;
   flex-direction: column;
 
   min-height: 500px;
-}
-.todo {
+} */
+/* .todo {
   position: relative;
 
   flex: 1 0 auto;
@@ -114,8 +114,8 @@ html {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
-.todo-placeholder-text {
+} */
+/* .todo-placeholder-text {
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
   text-align: center;
@@ -124,4 +124,4 @@ html {
 .add-button-placeholder-text {
   font-family: "Bungee", sans-serif;
   font-size: 24px;
-}
+} */
