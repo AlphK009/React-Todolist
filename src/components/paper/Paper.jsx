@@ -1,11 +1,17 @@
-import React from "react";
+/** @jsxRuntime classic /
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
+// import React from "react";
 import PropTypes from "prop-types";
-import styles from "./paper.module.css";
+// import styles from "./paper.module.css";
+import * as styles from "./paper.styles";
+import { useTheme } from "@emotion/react";
 
 const Paper = ({ children }) => {
+  const theme = useTheme();
   return (
-    <div className={styles.container}>
-      <div className={styles.frame}>{children}</div>
+    <div css={styles.paper({ theme })}>
+      <div css={styles.frame({ theme })}>{children}</div>
     </div>
   );
 };

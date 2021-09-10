@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Paper from "../components/Paper";
-import Header from "../components/Header";
-import TodoForm from "../components/TodoForm";
-import Todos from "../components/Todos";
+import Paper from "../components/paper/Paper";
+import Header from "../components/Header/Header";
+import TodoForm from "../components/TodoForm/TodoForm";
+import Todos from "../components/Todos/Todos";
 
 const TodoList = () => {
   const [showAdd, setShowAdd] = useState(false);
