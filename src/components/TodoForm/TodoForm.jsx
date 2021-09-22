@@ -5,7 +5,10 @@ import React from "react";
 import PropsTypes from "prop-types";
 import { useTheme } from "@emotion/react";
 // import style from "./todoform.module.css";
+import Button from "../Button/Button";
 import * as styles from "./todoform.styles";
+import Container from "../../layout/container";
+import Item from "../../layout/item";
 
 const TodoForm = ({ addTodo, showAdd }) => {
   const [value, setValue] = React.useState("");
@@ -29,15 +32,22 @@ const TodoForm = ({ addTodo, showAdd }) => {
 
   if (showAdd) {
     return (
-      <section css={styles.add}>
-        <form css={styles.addForm} onSubmit={handleFormSubmit}>
-          <input
-            type="text"
-            css={styles.addSearch({ theme })}
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-          />
-          <button css={styles.addBtn({ theme })}>ADD</button>
+      <section className="todoform-component">
+        <form onSubmit={handleFormSubmit}>
+          <Container alignItems="flex-start">
+            <Item flex={1} padding="0 0 0 16px">
+              <input
+                type="text"
+                css={styles.addSearch({ theme })}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+              />
+            </Item>
+            <Item>
+              {/* <button css={styles.addBtn({ theme })}>ADD</button> */}
+              <Button text="Add" />
+            </Item>
+          </Container>
         </form>
       </section>
     );

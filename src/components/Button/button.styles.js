@@ -1,10 +1,10 @@
 import { css } from "@emotion/react";
 
-export const button = ({ align, color, theme}) => {
+export const button = ({ align, color, theme }) => {
   let textColor;
 
   const {
-    color : {primary}
+    color: { primary }
   } = theme;
 
   switch (color) {
@@ -20,7 +20,7 @@ export const button = ({ align, color, theme}) => {
   return css`
     font-size: 1.8 rem;
     font-family: "Bungee", sans-serif;
-    width: 24%;
+    /* width: 24%; */
     color: ${textColor};
 
     padding: 16px;
